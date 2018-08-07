@@ -21,7 +21,7 @@ Include: yum
 	mkdir -p ${SINGULARITY_ROOTFS}/export/freesurfer_license
 	
 %files		##########	Need gradient_coefficient_files!!!	&&	freesurfer license key file from https://surfer.nmr.mgh.harvard.edu/fswiki/License
-    /root/Downloads/xnat_pbs_jobs_container/gradient_coefficient_files/* /export/HCP/gradient_coefficient_files/
+	/root/Downloads/xnat_pbs_jobs_container/gradient_coefficient_files/* /export/HCP/gradient_coefficient_files/
 	/root/Downloads/xnat_pbs_jobs_container/license.txt /export/freesurfer_license/
 	
 %post
